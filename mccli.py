@@ -12,12 +12,11 @@ import datetime
 import time
 from pathlib import Path
 
-from mclib import printerr
-from mclib import MeshCore
 from mclib import TCPConnection
 from mclib import BLEConnection
 from mclib import SerialConnection
-
+from mclib import printerr
+from mclib import MeshCore
 
 
 # default address is stored in a config file
