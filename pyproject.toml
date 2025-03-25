@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meshcore-cli"
+version = "0.3"
+authors = [
+  { name="Florent de Lamotte", email="florent@frizoncorrea.fr" },
+]
+description = "Command line interface to meshcore companion radios"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [ "meshcore" ]
+
+[project.urls]
+Homepage = "https://github.com/fdlamotte/meshcore-cli"
+Issues = "https://github.com/fdlamotte/meshcore-cli/issues"
+
+[project.scripts]
+meshcli = "meshcore_cli.meshcore_cli:cli"
+meshcore-cli = "meshcore_cli.meshcore_cli:cli"
