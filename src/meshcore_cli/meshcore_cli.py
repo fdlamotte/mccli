@@ -278,4 +278,5 @@ async def main(argv):
     while len(cmds) > 0 :
         cmds = await next_cmd(mc, cmds)
 
-asyncio.run(main(sys.argv[1:]))
+def cli():
+    asyncio.run(main(sys.argv[1:]))
